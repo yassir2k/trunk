@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/amtLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="11dp"
+        android:paddingLeft="10dp"
+        android:text="@string/amount"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/holo_green_dark" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/orientationStr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:padding="10dip"
+                android:text="@string/orientation" />
+
+            <Spinner
+                android:id="@+id/orientation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/orientation_option"
+                android:paddingLeft="10dp"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/colorTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:padding="10dip"
+                android:text="Print color options:" />
+
+            <Spinner
+                android:id="@+id/colorOptions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/copiesText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:paddingLeft="10dp"
+                android:text="Number of copies (1 - 100):" />
+
+            <EditText
+                android:id="@+id/no_of_Copies"
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/pagesText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:paddingLeft="10dp"
+                android:text="Number of pages (1 - 20):" />
+
+            <EditText
+                android:id="@+id/no_of_Pages"
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/paperSizeTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:paddingLeft="10dp"
+                android:text="Paper Size:" />
+
+            <Spinner
+                android:id="@+id/paperSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/paper_size_option"
+                android:paddingLeft="20dp" />
+
+            <TextView
+                android:id="@+id/instructionTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Additional print note (optional):"
+                android:layout_marginTop="15dip"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/instruction"
+                android:layout_width="match_parent"
+                android:layout_height="83dp"
+                android:ems="10"
+                android:inputType="textMultiLine" />
+
+            <Button
+                android:id="@+id/toPayment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:paddingLeft="20dp"
+                android:text="Proceed to Payment >>" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</TableLayout>

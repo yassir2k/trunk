@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Rev Print</string>
+    <string name="Login">Login</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="login_title">Login</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="mobile">Mobile Phone No</string>
+    <string name="amount">Total Price Charge:</string>
+    <string name="register_title">Register</string>
+    <string name="btnRegister">Register</string>
+    <string name="orientation">Orientation</string>
+    <string name="pwd">Password</string>
+    <string name="searchHint">Search Cities Present</string>
+    <string name="btnSearch">Search</string>
+    <string-array name="orientation_option">
+        <item>Portrait</item>
+        <item>Landscape</item>
+    </string-array>
+    <string-array name="print_color_options">
+        <item>Black and White</item>
+        <item>Color</item>
+    </string-array>
+
+    <string-array name="print_orientation">
+        <item>Portrait</item>
+        <item>Landscape</item>
+    </string-array>
+
+    <string-array name="paper_size_option">
+        <item>A4</item>
+        <item>A3</item>
+    </string-array>
+    <string name="title_activity_maps2">Map</string>
+</resources>
